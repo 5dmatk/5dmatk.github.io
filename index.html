@@ -210,6 +210,72 @@
                             <input class="form-control" id="phone" type="tel" placeholder="01012345678" />
                             <label for="phone">Phone number</label>
                         </div>
+
+                        <!-- services -->
+                        <div class="form-floating mb-3">
+                            <select class="form-select" required name="service">
+                                <option selected disabled> choice service - اختر خدمة</option>
+                                <optgroup label="تصميمات">
+                                    <option value="بانرات">بانرات</option>
+                                    <option value="كتب">كتب</option>
+                                    <option value="مذكرات">مذكرات</option>
+                                    <option value="كفرات">كفرات</option>
+                                    <option value="اعلانات سوشيال ميديا">اعلانات سوشيال ميديا</option>
+                                    <option value="انفوجرافيك">انفوجرافيك</option>
+                                    <option value="لوجوهات">لوجوهات</option>
+                                </optgroup>
+                                <optgroup label="كتابة">
+                                    <option value="كتب">كتب</option>
+                                    <option value="مذكرات">مذكرات</option>
+                                    <option value="ملخصات">ملخصات</option>
+                                    <option value="سيرة ذاتية">سيرة ذاتية</option>
+                                </optgroup>
+                                <optgroup label="برمجيات تعليمية">
+                                    <option value="المناقشات العلمية">المناقشات العلمية</option>
+                                    <option value="شروحات وموديولات مختصرة">شروحات وموديولات مختصرة</option>
+                                    <option value="الصفوق التعليمية"> الصفوق التعليمية</option>
+                                </optgroup>
+                                <optgroup label="البحث العلمي">
+                                    <option value="رسائل الماجستير والدكتوراة">رسائل الماجستير والدكتوراة</option>
+                                    <option value="خطة بحث">خطة بحث</option>
+                                    <option value="اطار نظري، والاحصاء">اطار نظري، والاحصاء</option>
+                                </optgroup>
+                                <optgroup label="صيانة الحاسب">
+                                    <option value="تفعيل البرامج ونظام التشغيل">تفعيل البرامج ونظام التشغيل</option>
+                                    <option value="تحديثات النظام">تحديثات النظام</option>
+                                    <option value="اعداد البرامج والتعريفات">اعداد البرامج والتعريفات</option>
+                                </optgroup>
+                                <optgroup label="بناء وتطوير المواقع">
+                                    <option value="تطوير">تطوير</option>
+                                    <option value="تصميم">تصميم</option>
+                                </optgroup>
+                                <optgroup label="مونتاج الفيديو">
+                                    <option value="مقدمات">مقدمات</option>
+                                    <option value="مشاريع نهائية">مشاريع نهائية</option>
+                                </optgroup>
+                                <optgroup label="مشاريع التخرج">
+                                    <option value="الدراسات العليا">الدراسات العليا</option>
+                                    <option value="الدبلومات">الدبلومات</option>
+                                    <option value="كافة الكليات">كافة الكليات</option>
+                                </optgroup>
+                                <optgroup label="التقديم للوظائف الحكومية">
+                                    <option value="طبقا لاعلانات موقع الوزارة">طبقا لاعلانات موقع الوزارة</option>                                    
+                                </optgroup>
+                                <optgroup label="عروض تقديمية">
+                                    <option value="بريزي">بريزي</option>
+                                    <option value="فوكسي">فوكسي</option>
+                                    <option value="باور بوينت">باور بوينت</option>
+                                </optgroup>
+                                <optgroup label="تحميل بيانات">
+                                    <option value="برامج">برامج</option>
+                                    <option value="العاب">العاب</option>
+                                    <option value="مسلسلات">مسلسلات</option>
+                                    <option value="افلام">افلام</option>
+                                    <option value="كورسات">كورسات</option>                                    
+                                </optgroup>
+                            </select>
+                        </div>
+
                         <!-- Message input-->
                         <div class="form-floating mb-3">
                             <textarea class="form-control" id="message" type="text"
@@ -242,7 +308,7 @@
                         <!-- an error submitting the form-->
                         <div class="d-none" id="requiredError">
                             <div class="text-center text-danger mb-3">
-                                fullName, email and message are required
+                                fullName, email, service and message are required
                             </div>
                         </div>
                         <!-- Submit Button-->

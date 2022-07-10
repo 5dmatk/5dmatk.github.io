@@ -24,17 +24,26 @@ function addRequest() {
     const email = form.email.value;
     const phoneNumber = form.phone.value;
     const details = form.message.value;
+    const service = form.service.value;
+    
+
+    form.name.value = "";
+    form.email.value = "";
+    form.phone.value = "";
+    form.message.value = "";
+    form.service.value = "";
 
     spinner.classList = 'd-inline-block spinner-border text-light';
     submitErrorMessage.classList = 'd-none';
     submitSuccessMessage.classList = 'd-none';
 
-    if (fullName !== '' && email !== '' && details !== '') {
+    if (fullName !== '' && email !== '' && details !== '' && service !== 'اختر خدمة') {
         postData({
             fullName,
             email,
             phoneNumber,
-            details
+            details,
+            service
         }).then((data) => {
             submitErrorMessage.classList = 'd-none';
             submitSuccessMessage.classList = 'd-block';
